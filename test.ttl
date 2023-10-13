@@ -1,0 +1,164 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.com/classes/CARDINAL
+<http://example.com/classes/CARDINAL> rdf:type owl:Class .
+
+
+###  http://example.com/classes/DATE
+<http://example.com/classes/DATE> rdf:type owl:Class .
+
+
+###  http://example.com/classes/EVENT
+<http://example.com/classes/EVENT> rdf:type owl:Class .
+
+
+###  http://example.com/classes/FAC
+<http://example.com/classes/FAC> rdf:type owl:Class .
+
+
+###  http://example.com/classes/GPE
+<http://example.com/classes/GPE> rdf:type owl:Class .
+
+
+###  http://example.com/classes/LOC
+<http://example.com/classes/LOC> rdf:type owl:Class .
+
+
+###  http://example.com/classes/ORG
+<http://example.com/classes/ORG> rdf:type owl:Class .
+
+
+###  http://example.com/classes/PERSON
+<http://example.com/classes/PERSON> rdf:type owl:Class .
+
+
+###  http://example.com/classes/WORK_OF_ART
+<http://example.com/classes/WORK_OF_ART> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com/entities/Alaska
+<http://example.com/entities/Alaska> rdf:type owl:NamedIndividual ,
+                                              <http://example.com/classes/GPE> ;
+                                     rdfs:label "Alaska" .
+
+
+###  http://example.com/entities/Brooks_River
+<http://example.com/entities/Brooks_River> rdf:type owl:NamedIndividual ,
+                                                    <http://example.com/classes/LOC> ;
+                                           rdfs:label "Brooks River" .
+
+
+###  http://example.com/entities/Chin
+<http://example.com/entities/Chin> rdf:type owl:NamedIndividual ,
+                                            <http://example.com/classes/PERSON> ;
+                                   rdfs:label "Chin" .
+
+
+###  http://example.com/entities/Chunk
+<http://example.com/entities/Chunk> rdf:type owl:NamedIndividual ,
+                                             <http://example.com/classes/ORG> ;
+                                    rdfs:label "Chunk" .
+
+
+###  http://example.com/entities/Explore.org
+<http://example.com/entities/Explore.org> rdf:type owl:NamedIndividual ,
+                                                   <http://example.com/classes/ORG> ;
+                                          rdfs:label "Explore.org" .
+
+
+###  http://example.com/entities/Fat_Bear_Week
+<http://example.com/entities/Fat_Bear_Week> rdf:type owl:NamedIndividual ,
+                                                     <http://example.com/classes/EVENT> ;
+                                            rdfs:label "Fat Bear Week" .
+
+
+###  http://example.com/entities/Grazer
+<http://example.com/entities/Grazer> rdf:type owl:NamedIndividual ,
+                                              <http://example.com/classes/PERSON> ;
+                                     rdfs:label "Grazer" .
+
+
+###  http://example.com/entities/Katmai_National_Park
+<http://example.com/entities/Katmai_National_Park> rdf:type owl:NamedIndividual ,
+                                                            <http://example.com/classes/FAC> ,
+                                                            <http://example.com/classes/WORK_OF_ART> ;
+                                                   rdfs:label "Katmai National Park" .
+
+
+###  http://example.com/entities/Mondo
+<http://example.com/entities/Mondo> rdf:type owl:NamedIndividual ,
+                                             <http://example.com/classes/FAC> ;
+                                    rdfs:label "Mondo" .
+
+
+###  http://example.com/entities/Preserve
+<http://example.com/entities/Preserve> rdf:type owl:NamedIndividual ,
+                                                <http://example.com/classes/GPE> ;
+                                       rdfs:label "Preserve" .
+
+
+###  http://example.com/entities/Queen
+<http://example.com/entities/Queen> rdf:type owl:NamedIndividual ,
+                                             <http://example.com/classes/PERSON> ;
+                                    rdfs:label "Queen" .
+
+
+###  http://example.com/entities/Tuesday
+<http://example.com/entities/Tuesday> rdf:type owl:NamedIndividual ,
+                                               <http://example.com/classes/DATE> ;
+                                      rdfs:label "Tuesday" .
+
+
+###  http://example.com/entities/the_Hall_of_Chompions
+<http://example.com/entities/the_Hall_of_Chompions> rdf:type owl:NamedIndividual ,
+                                                             <http://example.com/classes/ORG> ;
+                                                    rdfs:label "the \"Hall of Chompions" .
+
+
+###  http://example.com/entities/year
+<http://example.com/entities/year> rdf:type owl:NamedIndividual ,
+                                            <http://example.com/classes/DATE> ;
+                                   rdfs:label "year" .
+
+
+###  http://example.com/entities/108,321
+<http://example.com/entities/108,321> rdf:type owl:NamedIndividual ,
+                                               <http://example.com/classes/CARDINAL> ;
+                                      rdfs:label "108,321" .
+
+
+###  http://example.com/entities/128
+<http://example.com/entities/128> rdf:type owl:NamedIndividual ,
+                                           <http://example.com/classes/CARDINAL> ;
+                                  rdfs:label "128" .
+
+
+###  http://example.com/entities/23,134
+<http://example.com/entities/23,134> rdf:type owl:NamedIndividual ,
+                                              <http://example.com/classes/CARDINAL> ;
+                                     rdfs:label "23,134" .
+
+
+###  http://example.com/entities/32
+<http://example.com/entities/32> rdf:type owl:NamedIndividual ,
+                                          <http://example.com/classes/CARDINAL> ;
+                                 rdfs:label "32" .
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
